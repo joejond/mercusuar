@@ -856,8 +856,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "vts.view.Viewport": [],
   "vts.view.coba.Tanggal": [],
   "vts.view.peta.Peta": [],
-  "vts.view.peta.dPeta": [],
-  "vts.view.peta.tabPeta": []
+  "vts.view.peta.dPeta": []
 });
 Ext.ClassManager.addNameAliasMappings({
   "Ext.AbstractComponent": [],
@@ -1855,9 +1854,6 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "vts.view.peta.dPeta": [
     "widget.d_peta"
-  ],
-  "vts.view.peta.tabPeta": [
-    "widget.gpeta"
   ]
 });
 Ext.setVersion("ext-theme-base", "4.2.1");

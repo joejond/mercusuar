@@ -13,7 +13,7 @@ class getShip extends CI_Controller {
 			{
 			   $ship[] = array(
 					"id"=>$row->id_ship,
-					"ship"=>$row->name);
+					"name"=>$row->name);
 			}
 			
 			$jsonResult = array(

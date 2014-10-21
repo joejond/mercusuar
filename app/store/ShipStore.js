@@ -1,10 +1,10 @@
 /**
 * Jono Juli 2014
 */
-Ext.define('vts.store.dPeta', {
+Ext.define('vts.store.ShipStore', {
     extend: 'Ext.data.Store',
-    //requires: 'vts.model.dPeta',
-	model: 'vts.model.dPeta',
+    requires: 'vts.model.ShipStore',
+	model: 'vts.model.ShipStore',
 	autoLoad: true,
 	
 	proxy: {

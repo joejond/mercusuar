@@ -8,7 +8,10 @@ Ext.define('vts.view.peta.dPeta', {
 		'Ext.form.field.Checkbox',
 		'Ext.form.field.Date',
 		'Ext.grid.Panel',
-		'Ext.layout.container.Form'
+		'Ext.layout.container.Form',
+		'vts.view.peta.ListShip',
+		
+		//'vts.store.dPeta'
 	],
 	layout: {
         type: 'vbox',
@@ -77,18 +80,8 @@ Ext.define('vts.view.peta.dPeta', {
             }           
         }]
     },{
-		xtype : 'grid',
-		columns: [{
-			text: "Id", 
-			hidden: true,
-			width: 30, 
-			dataIndex: 'id'
-		},{
-			text: "Name", 
-			width: 120, 
-			dataIndex: 'ship'
-		}]
-    
+		xtype 	: 'list_ship'
+		    
     }]
 	
 	

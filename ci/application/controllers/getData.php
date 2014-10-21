@@ -35,6 +35,8 @@ class getData extends CI_Controller {
 				$id_modem = $row->modem_id;
 				
 				echo 'id_kapal : '.$id_kapal.' dan modemnya : '.$id_modem.'<br>';
+				//$dateambil  = date('Y-m-d H:i:s', mktime(0,0,0,7,27,2014));
+				
 				$dateambil = date('Y-m-d H:i:s', time() - (15 * 3600));
 				
 				$tgl_ambil	= date("Y-m-d", strtotime($dateambil));

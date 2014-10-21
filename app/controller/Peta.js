@@ -6,15 +6,16 @@ Ext.define('vts.controller.Peta', {
     
 	views: [
 		'peta.Peta',
-		'peta.dPeta'
+		'peta.dPeta',
+		'peta.ListShip'
     ],
 
     stores: [
-		
+		'ShipStore'
     ],
     
     models: [
-		
+		'ShipStore'
     ],
 	
 	refs : [

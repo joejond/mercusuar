@@ -4,8 +4,7 @@
 Ext.define('vts.view.peta.Peta', {
 	extend		: 'Ext.tab.Panel',
 	xtype		: 'xpeta',
-	requires	: [
-					],	
+	requires	: [				],	
 	
     tabPosition	: 'left',
 	items: [{
@@ -25,11 +24,6 @@ Ext.define('vts.view.peta.Peta', {
 			xtype	: 'd_peta',
 			width	: 200,
 			split	: true
-			
-			
-			
-			
-			
 		}]
 		
 	}, {

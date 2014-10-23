@@ -1,26 +1,9 @@
-/**
-* Jono Juli 2014
-*/
-Ext.define('vts.controller.Peta', {
+Ext.define('vts.controller.Detail', {
 	extend:'Ext.app.Controller',
-    
 	views: [
-		'peta.Peta',
-		'peta.dPeta',
-		'peta.ListShip'
+		'detail.Detail'
     ],
-
-    stores: [
-		'ShipStore',
-		'WsData'
-    ],
-    
-    models: [
-		'ShipStore',
-		'WsData'
-    ],
-	
-	refs : [
+    refs : [
 		{
             ref: 'xpeta',
             selector: 'xpeta'

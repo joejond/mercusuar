@@ -81,7 +81,6 @@ Ext.define('vts.view.peta.dPeta', {
         }]
     },{
 		xtype 	: 'list_ship'
-		    
     }]
 	
 	

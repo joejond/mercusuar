@@ -6,7 +6,6 @@ Ext.define('vts.store.ShipStore', {
     requires: 'vts.model.ShipStore',
 	model: 'vts.model.ShipStore',
 	autoLoad: true,
-	
 	proxy: {
 		type: 'ajax',
 		api: {

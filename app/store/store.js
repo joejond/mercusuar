@@ -1,5 +1,5 @@
-Ext.create('Ext.data.Store', {
-    requires: 'vts.model.WeatherPoint',
+Ext.define('vts.store.store', {
+    extend: 'Ext.data.Store',
     model: 'vts.model.WeatherPoint',
     data: [
         { temperature: 58, date: new Date(2011, 1, 1, 8) },

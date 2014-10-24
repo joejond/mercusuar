@@ -20,32 +20,80 @@ Ext.define('vts.view.daily.Daily', {
 		}, {
 			xtype: 'splitter'   // A splitter between the two child items
 		}, {                    // Details Panel specified as a config object (no xtype defaults to 'panel').
-			title: 'Akumulasi Data Flow Meter',
-			bodyPadding: 5,
-			align : 'right',
-			layout : 'hbox',
-				xtype: 'grid',
-				columns: [
-						{
-							text : "Ini row atas",
-
-						},{
-							text	: "Id Data", 
-							//hidden	: true,
-							width	: 100, 
-							dataIndex: 'id_data',
-							// xtype	: 'checkcolumn'
-						},{
-							text	: "Id Titik Ukur", 
-							//hidden	: true,
-							width	: 80, 
-							dataIndex: 'id_tu',
-						},{
-							text	: "Value", 
-							width	: 150, 
-							dataIndex: 'value'
-						}],
-			 // An array of form fields
-			flex: 2             // Use 2/3 of Container's height (hint to Box layout)
-	}]
+            title: 'Akumulasi Data Flow Meter',
+            layout : 'hbox',
+            xtype: 'grid',
+			store	: 'WsData',
+                columns: [
+                        {
+                            text : "Date",
+                            align : 'center',
+                            dataIndex : 'data_time'
+                        },{
+                            text    : "Hour",
+                            align : 'center',
+                            dataIndex : 'hour',
+                            width : 60,
+                        },{
+                            text    : "Engine#1",
+                            align : 'center',
+                            width : 599,
+                                items : [{
+                                    xtype : 'gridcolumn',
+                                    text : "Engine#1 (avg)",
+                                    
+                                },{
+                                    xtype : 'gridcolumn',
+                                    text : "Propeler#1 (avg)",
+                                    
+                                },{
+                                    xtype : 'gridcolumn',
+                                    text : "Flowmeter#1",
+                                    
+                                },{
+                                    xtype : 'gridcolumn',
+                                    text : "Overflow#1",
+                                    
+                                },{
+                                    xtype : 'gridcolumn',
+                                    text : "Temperature#1",
+                                    
+                                },{
+                                    xtype : 'gridcolumn',
+                                    text : "Pressure#1",
+                                    
+                                }]
+                        },{
+                            text    : "Engine#2", 
+                            align : 'center',
+                            width : 599,
+                                items : [{
+                                    xtype : 'gridcolumn',
+                                    text : "Engine#2 (avg)",
+                                    dataIndex : 'id_data'
+                                    
+                                },{
+                                    xtype : 'gridcolumn',
+                                    text : "Propeler#2 (avg)",
+                                    
+                                },{
+                                    xtype : 'gridcolumn',
+                                    text : "Flowmeter#2",
+                                    
+                                },{
+                                    xtype : 'gridcolumn',
+                                    text : "Overflow#2",
+                                    
+                                },{
+                                    xtype : 'gridcolumn',
+                                    text : "Temperature#2",
+                                    
+                                },{
+                                    xtype : 'gridcolumn',
+                                    text : "Pressure#2",
+                                    
+                                }]
+                        }], // An array of form fields
+            flex: 2             // Use 2/3 of Container's height (hint to Box layout)
+    }]
 });

@@ -15,21 +15,23 @@ class getWsData extends CI_Controller
 	{
 		try {
 			$q = $this->ws_data_model->getData();
-			foreach ($q->result() as $row) {
+			/*foreach ($q->result() as $row) {
 				$data[] = array(
 						"id_data" => $row->id_data,
 						"id_tu" => $row->id_titik_ukur,
 						"value" => $row->value
 					);
-			}
+			}*/
 			$hasilJson = array(
 					"success " => true,
-					"data" => $data
+					"data" => $q
 				);
 
-			echo json_encode($hasilJson);
+			
 		} catch (Exception $e) {
 			echo 'Caught exception: ',  $e->getMessage();
 		}
+		//$this->load->view('transpose');
+		echo json_encode($hasilJson);
 	}
 }

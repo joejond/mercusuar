@@ -12,7 +12,8 @@ class Ws_data_model extends CI_Model
     }
     public function getData()
     {
-    	$q = $this->db->query("SELECT * FROM data GROUP BY id_titik_ukur LIMIT 30");
-    	return $q;
+    	
+        $q = $this->db->get('data',30,30);
+    	return $q -> result();
     }
 }

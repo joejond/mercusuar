@@ -19,7 +19,7 @@ Ext.define('vts.view.daily.Daily2', {
 		flex : 2,
 		height : 317,
 		items : [{
-			// xtype : 'xchart'
+			xtype : 'chart',
 			height: 280,
 			width: 1313,
 			extend : 'Ext.chart.Chart',

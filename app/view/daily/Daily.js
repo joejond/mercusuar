@@ -9,16 +9,14 @@ Ext.define('vts.view.daily.Daily', {
         align: 'stretch',
    	},
     items: [
-    {               // Results grid specified as a config object with an xtype of 'grid'
-		layout  : 'hbox',
+    {
 		align   : 'left',
 		title   : 'Daily Summary',
-		split	: true,
-		
-		items   : [{
-			
-			html    : '<style>table.tableT{height:100%;width:100%;max-width:317px;min-width:317px;}table.tableT tr td{border:solid 1px;}table.tableT tr td,table tr td h3,table.tableT tr td h4,table.tableT tr td h1,table.tableT tr td h2,table.tableT tr td h3{text-align:center;margin:5px;padding:1px;}</style><table style="position:relative;overflow:visible;align:center;" class="tableT" align="center"><tr><td colspan="2">Total Daily Fuel</td></tr><tr><td colspan="2" valign="middle"><h3>NaN Liters</h3></td></tr><tr><td>Engine #1</td><td>Engine #2</td></tr><tr><td><h4>NaN Liters</h4></td><td><h4>NaN Liters</h4></td></tr><tr><td colspan="2"></td></tr><tr><td colspan="2">Genset Daily Running Hours</td></tr><tr><td>Genset #1</td><td>Genset #2</td></tr><tr><td>0 Hours</td><td>0 Hours</td></tr></table>'
-		}]
+		flex : 1,
+        split   : true,
+        items :[{
+                html : '<style type="text/css">table.total_daily {font-family: verdana,arial,sans-serif;font-size:12px;text-align: center;color:#333333;border-width: 1px;border-color: #a9c6c9;border-collapse: collapse;}table.total_daily td {border-width: 1px;padding: 4px;border-style: solid;border-color: #a9c6c9;}</style><table width="100%" class="total_daily"><tbody><tr><td colspan="2">Total Daily Fuel</td></tr><tr><td colspan="2" style="font-size:22px;">NaN Liters</td></tr><tr><td>Engine#1</td><td>Engine#2</td></tr><tr><td><span style="font-size:18px;">NaN Liters</span></td><td><span style="font-size:18px;">NaN Liters</span></td></tr><tr><td colspan="2"></td></tr><tr><td colspan="2">Genset Daily Running Hours</td></tr><tr><td>genset#1</td><td>genset#2</td></tr><tr><td><span style="font-size:18px;">0 Hours</span></td><td><span style="font-size:18px;">0 Hours</span></td></tr></tbody></table>'
+        }]
 		}, {
 			xtype: 'splitter'   // A splitter between the two child items
 		}, {                    // Details Panel specified as a config object (no xtype defaults to 'panel').

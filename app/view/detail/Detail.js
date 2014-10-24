@@ -13,13 +13,13 @@ Ext.define('vts.view.detail.Detail', {
 		columns: [{
 			text	: "Id Data", 
 			//hidden	: true,
-			width	: 130, 
+			width	: 100, 
 			dataIndex: 'id_data',
-					// xtype	: 'checkcolumn'
+			// xtype	: 'checkcolumn'
 		},{
 			text	: "Id Titik Ukur", 
 			//hidden	: true,
-			width	: 130, 
+			width	: 80, 
 			dataIndex: 'id_tu',
 		},{
 			text	: "Value", 

@@ -12,14 +12,21 @@ Ext.define('vts.view.detail.Detail', {
 		store	: 'WsData',
 		columns: [{
 			text	: "Id Data", 
-			//hidden	: true,
+			//hidden	: true
 			width	: 130, 
 			dataIndex: 'id_data',
 					// xtype	: 'checkcolumn'
 		},{
 			text	: "Id Titik Ukur", 
 			//hidden	: true,
-			width	: 130, 
+			width	: 130,
+			width	: 100, 
+			dataIndex: 'id_data',
+			// xtype	: 'checkcolumn'
+		},{
+			text	: "Id Titik Ukur", 
+			//hidden	: true,
+			width	: 80,
 			dataIndex: 'id_tu',
 		},{
 			text	: "Value", 

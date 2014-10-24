@@ -109,8 +109,7 @@ $autoload['language'] = array();
 |
 */
 
-$autoload['model'] = array('DataShip');
-
+$autoload['model'] = array();
 
 /* End of file autoload.php */
 /* Location: ./application/config/autoload.php */

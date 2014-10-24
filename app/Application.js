@@ -5,8 +5,7 @@ Ext.define('vts.Application', {
 
     views: [
         'peta.Peta',
-		'peta.dPeta'
-		
+        'peta.dPeta'
     ],
 
     controllers: [

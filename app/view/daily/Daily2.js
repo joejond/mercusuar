@@ -15,6 +15,6 @@ Ext.define('vts.view.daily.Daily2', {
 		split	: true,
 		bodyPadding : 5,
 		// xtype : 'xchart',
-		height : 380,
+		height : 353,
     }]
 })

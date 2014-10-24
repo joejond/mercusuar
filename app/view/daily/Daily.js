@@ -6,7 +6,6 @@ Ext.define('vts.view.daily.Daily', {
     region : 'center',
     layout: {
         type: 'hbox',
-        pack: 'start',
         align: 'stretch',
     },
     items: [
@@ -25,10 +24,74 @@ Ext.define('vts.view.daily.Daily', {
             title: 'Akumulasi Data Flow Meter',
             align : 'right',
             layout : 'hbox',
-            items: [{
-                xtype: 'panel',
-                fields: ['name', 'email', 'phone', 'date', 'time']
-            }], // An array of form fields
+            xtype: 'grid',
+                columns: [
+                        {
+                            text : "Date",
+                            align : 'center',
+                        },{
+                            text    : "Hour",
+                            align : 'center',
+                            width : 60,
+                        },{
+                            text    : "Engine#1",
+                            align : 'center',
+                            width : 599,
+                                items : [{
+                                    xtype : 'gridcolumn',
+                                    text : "Engine#1 (avg)",
+                                    
+                                },{
+                                    xtype : 'gridcolumn',
+                                    text : "Propeler#1 (avg)",
+                                    
+                                },{
+                                    xtype : 'gridcolumn',
+                                    text : "Flowmeter#1",
+                                    
+                                },{
+                                    xtype : 'gridcolumn',
+                                    text : "Overflow#1",
+                                    
+                                },{
+                                    xtype : 'gridcolumn',
+                                    text : "Temperature#1",
+                                    
+                                },{
+                                    xtype : 'gridcolumn',
+                                    text : "Pressure#1",
+                                    
+                                }]
+                        },{
+                            text    : "Engine#2", 
+                            align : 'center',
+                            width : 599,
+                                items : [{
+                                    xtype : 'gridcolumn',
+                                    text : "Engine#2 (avg)",
+                                    
+                                },{
+                                    xtype : 'gridcolumn',
+                                    text : "Propeler#2 (avg)",
+                                    
+                                },{
+                                    xtype : 'gridcolumn',
+                                    text : "Flowmeter#2",
+                                    
+                                },{
+                                    xtype : 'gridcolumn',
+                                    text : "Overflow#2",
+                                    
+                                },{
+                                    xtype : 'gridcolumn',
+                                    text : "Temperature#2",
+                                    
+                                },{
+                                    xtype : 'gridcolumn',
+                                    text : "Pressure#2",
+                                    
+                                }]
+                        }], // An array of form fields
             flex: 2             // Use 2/3 of Container's height (hint to Box layout)
     }]
 })

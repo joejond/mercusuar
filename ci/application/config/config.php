@@ -14,8 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost/mercusuar2/';
-
+$config['base_url']	= 'http://localhost/chevron/ci/';
 /*
 |--------------------------------------------------------------------------
 | Index File

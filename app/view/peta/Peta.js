@@ -4,7 +4,8 @@
 Ext.define('vts.view.peta.Peta', {
 	extend		: 'Ext.tab.Panel',
 	xtype		: 'xpeta',
-	requires	: ['vts.view.detail.Detail','vts.view.daily.Daily','vts.view.daily.Daily2'],	
+	requires	: ['vts.view.detail.Detail','vts.view.daily.Daily','vts.view.daily.Daily2'],
+	requires	: ['vts.view.detail.Detail','vts.view.daily.Daily','vts.view.daily.Daily2','vts.view.coba.Toolbar'],	
 	
     tabPosition	: 'left',
 	items: [{
@@ -41,6 +42,11 @@ Ext.define('vts.view.peta.Peta', {
 			collapsible	: true,
 			xtype	: 'xdetail',
 			title   : 'ini toolbar nantinya',
+			region	: 'north',
+			xtype	: 'xtoolbar',
+		},{
+			region	: 'west',
+			xtype	: 'xdetail',
 			width	: 1366,
 			split	: true
 		}]
@@ -54,6 +60,9 @@ Ext.define('vts.view.peta.Peta', {
 			region	: 'center',
 			xtype   : 'panel',
 					    
+		},{
+			region	: 'north',
+			xtype	: 'xtoolbar',
 		},{
 			region	: 'north',
 			xtype	: 'xdaily2',

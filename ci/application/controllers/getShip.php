@@ -1,14 +1,13 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class getShip extends CI_Controller {
+class GetShip extends CI_Controller {
 	function __construct() {
         parent::__construct();
-		$this->load->model('dataship');
+        $this->load->model('data_ship');
     }
 	public function index()
-	{
-		try {
-			$query = $this->dataship->getShip();
+	{		try {
+			$query = $this->data_ship->getShip();
 			foreach ($query->result() as $row)
 			{
 			   $ship[] = array(

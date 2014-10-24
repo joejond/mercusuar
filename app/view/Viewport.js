@@ -16,7 +16,7 @@ Ext.define('vts.view.Viewport', {
 		padding	: '0 5 0 5',
 		border	: false,
 		bodyStyle: 'background-color: #E0E0E0;',
-		
+		layout : 'hbox',
 		items	: [{
 				
 				html 	: '<table><tr valign="middle"><td><img src="./inc/img/ship.png"></td><td>MONITA - Vessel Tracking System</td></tr></table>', 
@@ -26,7 +26,9 @@ Ext.define('vts.view.Viewport', {
 				border 	: false	
 		},{
 				//title: 'Tab 2',
-				html 	: 'sesi login dan waktu',
+				//xtype	: 'panel',
+				html 	: '<table valign="middle" style="margin-top:6px;" align="right"><tr><td>Welcome Admin</td></tr><tr><td></td></tr></table>',
+				// html    : Ext.Date.format(date, 'M j, Y'),
 				width 	: '25%',
 				height 	: 48,
 				bodyStyle: 'background-color: #E0E0E0;',

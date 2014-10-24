@@ -14,7 +14,12 @@
 | path to your installation.
 |
 */
+<<<<<<< HEAD
 $config['base_url']	= 'http://localhost/mercusuar2/';
+=======
+$config['base_url']	= 'http://localhost/mercusuar/index.php/ci/';
+>>>>>>> f043780d945f9235c4d2023432d6a245f90b86b3
+
 /*
 |--------------------------------------------------------------------------
 | Index File

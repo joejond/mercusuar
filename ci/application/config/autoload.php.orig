@@ -109,7 +109,12 @@ $autoload['language'] = array();
 |
 */
 
-$autoload['model'] = array('DataShip','data_ship','ws_data_model');
+<<<<<<< HEAD
+$autoload['model'] = array('DataShip');
+=======
+$autoload['model'] = array('data_ship');
+>>>>>>> f043780d945f9235c4d2023432d6a245f90b86b3
+
 
 /* End of file autoload.php */
 /* Location: ./application/config/autoload.php */

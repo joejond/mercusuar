@@ -96,3 +96,22 @@ Ext.define('Ext.ux.GMapPanel', {
     }
  
 });
+Ext.create('Ext.ux.GMapPanel', {
+                    autoShow: true,
+                    layout: 'fit',                        
+                    closeAction: 'hide',                       
+                    height:300,
+                    border: false,
+                    items: {
+                        xtype: 'gmappanel',
+                        center: {
+                            geoCodeAddr: 'pune,maharashtra',
+                            marker: {title: 'Pune'}
+                        },
+
+                    }
+                })
+            }]
+        }]
+
+    })

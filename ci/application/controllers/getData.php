@@ -1,9 +1,9 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class getData extends CI_Controller {
+class GetData extends CI_Controller {
 	function __construct() {
         parent::__construct();
-		$this->load->model('dataship');
+        $this->load->model('data_ship');
     }
 	public function index()
 	{
@@ -28,7 +28,7 @@ class getData extends CI_Controller {
 		
 		try{
 		
-			$query = $this->dataship->getShip();
+			$query = $this->data_ship->getShip();
 			
 			foreach ($query->result() as $row){
 				$id_kapal = $row->id_ship;
@@ -98,12 +98,12 @@ class getData extends CI_Controller {
 										$jam   = date("H", strtotime($date1));
 										$waktu = date("YmdHis", strtotime($date1));
 										
-										$query = $this->dataship->jmlDataTime($waktu,$id_kapal);
+										$query = $this->data_ship->jmlDataTime($waktu,$id_kapal);
 										
 										if ($query->num_rows() == 0){
 											//echo 'Data kosong bro!! <br>';
 											
-											$parsing = $this->dataship->parsingRef($id_kapal);
+											$parsing = $this->data_ship->parsingRef($id_kapal);
 											$no = 1;
 											foreach ($parsing->result() as $r){
 												

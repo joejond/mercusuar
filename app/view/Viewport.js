@@ -1,8 +1,10 @@
 Ext.define('vts.view.Viewport', {
     extend: 'Ext.container.Viewport',
     requires:[
-        'Ext.layout.container.Border',
-		'vts.view.peta.Peta'
+    	'Ext.layout.container.Border',
+        'vts.view.konten.HeadKonten',
+        'vts.view.konten.IsiKonten'
+		// 'vts.view.peta.Peta'
         
     ],
 
@@ -13,34 +15,15 @@ Ext.define('vts.view.Viewport', {
     items: [{
         region 	: 'north',
 		height	: 50,
-		padding	: '0 5 0 5',
-		border	: false,
+		xtype	: 'hKonten',
 		bodyStyle: 'background-color: #E0E0E0;',
-		layout : 'hbox',
-		items	: [{
-				
-				html 	: '<table><tr valign="middle"><td><img src="./inc/img/ship.png"></td><td>MONITA - Vessel Tracking System</td></tr></table>', 
-				width 	: '75%',
-				height 	: 48,
-				bodyStyle: 'background-color: #E0E0E0; font-size: 28px;',
-				border 	: false	
-		},{
-				//title: 'Tab 2',
-				//xtype	: 'panel',
-				html 	: '<table valign="middle" style="margin-top:6px;" align="right"><tr><td>Welcome Admin</td></tr><tr><td></td></tr></table>',
-				// html    : Ext.Date.format(date, 'M j, Y'),
-				width 	: '25%',
-				height 	: 48,
-				bodyStyle: 'background-color: #E0E0E0;',
-				border 	: false,
-				id		: 'header_id'
-		}]
+		
 	},{
         
         region	: 'center',  
-		padding : 5,
+		padding : 4,
 		align	: 'stretch',
 		frame	: true,
-		xtype	: 'xpeta',
+		xtype	: 'isikonten',
     }]	
 });

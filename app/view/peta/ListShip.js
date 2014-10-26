@@ -6,14 +6,15 @@ Ext.define('vts.view.peta.ListShip', {
 	requires	: ['Ext.grid.column.CheckColumn'],
 	
 	xtype	: 'list_ship',
-	store	: 'ShipStore',
+	store	: 'Kapals',
 	
 	columns: [{
 			text	: "Id", 
 			//hidden	: true,
 			width	: 30, 
-			dataIndex: 'id',
-			// xtype	: 'checkcolumn'
+			dataIndex: 'active',
+			
+			xtype : 'checkcolumn'
 		},{
 			text	: "Ship Name", 
 			width	: 150, 

@@ -5,6 +5,7 @@ Ext.define('vts.view.konten.IsiKonten', {
 	extend		: 'Ext.tab.Panel',
 	xtype		: 'isikonten',
 	requires	: [
+		'vts.view.peta.dPeta'
 		// 'vts.view.detail.Detail',
 		// 'vts.view.daily.Daily',
 		// 'vts.view.daily.Daily2',
@@ -17,17 +18,21 @@ Ext.define('vts.view.konten.IsiKonten', {
 		//layout	: 'border',
 		iconCls	: 'tab-map',
 		xtype	: 'panel',
-		layout	: 'border',
+		layout	: {
+			type : 'border',
+			align : 'stretch'
+		},
 		items		: [{
 			region	: 'center',
 			xtype	: 'panel',
 			
 		},{
 			region	: 'west',
-			title	: 'Ship List',
+			title	: 'Vessel Navigation',
 			collapsible	: true,
-			// xtype	: 'd_peta',
-			xtype	: 'panel',
+			collapsed	: true,
+			xtype	: 'd_peta',
+			// xtype	: 'panel',
 			width	: 200,
 			split	: true
 		}]

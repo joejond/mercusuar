@@ -1,8 +1,8 @@
 Ext.define('vts.view.coba.Toolbar', {
-    extend      : 'Ext.toolbar.Toolbar',
-    xtype       : 'xtoolbar',
-    requires    : ['Ext.form.field.ComboBox','Ext.form.ComboBox'],
-    items: [
+	extend		: 'Ext.toolbar.Toolbar',
+	xtype       : 'xtoolbar',
+	requires    : ['Ext.form.field.ComboBox','Ext.form.ComboBox'],
+	items: [
         'Selected Ship :',
         {
             extend : 'Ext.form.ComboBox',

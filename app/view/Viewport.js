@@ -26,14 +26,12 @@ Ext.define('vts.view.Viewport', {
 				border 	: false	
 		},{
 				//title: 'Tab 2',
-				html 	: '<table><tr><td>Welcome, Admin <a href="#">(logout)</a></td></tr><tr><td>22 Oktober 2014, 10:54 WITA</td></tr></table>',
-
 				//xtype	: 'panel',
-				html 	: '<table valign="middle" style="margin-top:6px;" align="right"><tr><td>Welcome Admin</td></tr><tr><td></td></tr></table>',
+				html 	: '<table valign="middle" style="margin-top:6px;font-size:14px;" align="right"><tr><td>Welcome, Admin <a href="#">(logout)</a></td></tr><tr><td>27 October 2014 - 10:46 WITA</td></tr></table>',
 				// html    : Ext.Date.format(date, 'M j, Y'),
 				width 	: '25%',
 				height 	: 48,
-				bodyStyle: 'background-color: #E0E0E0; font-size: 14px;',
+				bodyStyle: 'background-color: #E0E0E0;',
 				border 	: false,
 				id		: 'header_id'
 		}]

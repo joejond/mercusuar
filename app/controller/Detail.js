@@ -1,18 +1,25 @@
 Ext.define('vts.controller.Detail', {
 	extend:'Ext.app.Controller',
+	
 	views: [
 		'detail.Detail'
     ],
-    refs : [
-		{
-            ref: 'xpeta',
-            selector: 'xpeta'
-        },{
-			ref: 'gpeta',
-            selector: 'gpeta'
-			
-		}
+	
+	stores: [
+		'WsData'
+    ],
+    
+    models: [
+		
+		'WsData'
+    ],
+	
+	refs : [
+		
 	],
+
+
+	
 	
 	 
 	init:function(){

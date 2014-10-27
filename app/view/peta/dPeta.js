@@ -2,24 +2,24 @@
 * Jono Juli 2014
 */
 Ext.define('vts.view.peta.dPeta', {
-    extend      : 'Ext.form.Panel',
-    xtype       : 'd_peta',
-    requires    : [
-        'Ext.form.field.Checkbox',
-        'Ext.form.field.Date',
-        'Ext.grid.Panel',
-        'Ext.layout.container.Form',
-        'vts.view.peta.ListShip',
-        
-        //'vts.store.dPeta'
-    ],
-    layout: {
+	extend		: 'Ext.form.Panel',
+	xtype		: 'd_peta',
+	requires	: [
+		'Ext.form.field.Checkbox',
+		'Ext.form.field.Date',
+		'Ext.grid.Panel',
+		'Ext.layout.container.Form',
+		'vts.view.peta.ListShip',
+		
+		//'vts.store.dPeta'
+	],
+	layout: {
         type: 'vbox',
         pack: 'start',
         align: 'stretch'
     },
-    
-    items:[    
+	
+	items:[    
     {                            
         height: 140,
         layout: 'form',
@@ -27,7 +27,7 @@ Ext.define('vts.view.peta.dPeta', {
         padding: 10,
         frame: true,
         
-        items: [
+		items: [
         {
             xtype: 'checkboxfield',
             name: 'checkbox1',
@@ -80,9 +80,8 @@ Ext.define('vts.view.peta.dPeta', {
             }           
         }]
     },{
-        xtype   : 'list_ship'
-            
+		xtype 	: 'list_ship'
     }]
-    
-    
+	
+	
 });

@@ -4,7 +4,6 @@
 Ext.define('vts.view.peta.Peta', {
 	extend		: 'Ext.tab.Panel',
 	xtype		: 'xpeta',
-	requires	: ['vts.view.detail.Detail','vts.view.daily.Daily','vts.view.daily.Daily2'],
 	requires	: ['vts.view.detail.Detail','vts.view.daily.Daily','vts.view.daily.Daily2','vts.view.coba.Toolbar'],	
 	
     tabPosition	: 'left',
@@ -38,10 +37,6 @@ Ext.define('vts.view.peta.Peta', {
 			xtype   : 'panel'
 					    
 		},{
-			region	: 'west',
-			collapsible	: true,
-			xtype	: 'xdetail',
-			title   : 'ini toolbar nantinya',
 			region	: 'north',
 			xtype	: 'xtoolbar',
 		},{

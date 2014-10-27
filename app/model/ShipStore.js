@@ -7,7 +7,7 @@ Ext.define('vts.model.ShipStore', {
 		'Ext.data.proxy.Ajax'
     ],*/
     
-    fields: ['id', 'name']
+    fields: ['check','id', 'name']
 
     
 });

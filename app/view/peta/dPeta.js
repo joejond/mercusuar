@@ -5,17 +5,15 @@ Ext.define('vts.view.peta.dPeta', {
 	extend		: 'Ext.form.Panel',
 	xtype		: 'd_peta',
 	requires	: [
-		'Ext.form.field.Checkbox',
 		'Ext.form.field.Date',
-		'Ext.grid.Panel',
 		'Ext.layout.container.Form',
-		'vts.view.peta.ListShip',
+		'vts.view.peta.ListShip'
 		
 		//'vts.store.dPeta'
 	],
 	layout: {
         type: 'vbox',
-        pack: 'start',
+        // pack: 'start',
         align: 'stretch'
     },
 	
@@ -23,7 +21,7 @@ Ext.define('vts.view.peta.dPeta', {
     {                            
         height: 140,
         layout: 'form',
-        id: 'simpleForm',
+        // id: 'simpleForm',
         padding: 10,
         frame: true,
         

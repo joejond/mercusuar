@@ -5,19 +5,19 @@ Ext.define('vts.controller.Peta', {
 	extend:'Ext.app.Controller',
     
 	views: [
-		'peta.Peta',
+		// 'peta.Peta',
 		'peta.dPeta',
 		'peta.ListShip'
     ],
 
     stores: [
-		'ShipStore',
-		'WsData'
+		'Kapals',
+		// 'WsData'
     ],
     
     models: [
-		'ShipStore',
-		'WsData'
+		'Kapal',
+		// 'WsData'
     ],
 	
 	refs : [

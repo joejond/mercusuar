@@ -3,7 +3,6 @@ Ext.define('vts.view.detail.Detail', {
 	xtype       : 'xdetail',
     layout: {
         type: 'hbox',
-        pack: 'start',
         align: 'stretch'
     },
     items: [{               // Results grid specified as a config object with an xtype of 'grid'

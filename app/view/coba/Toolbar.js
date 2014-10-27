@@ -1,17 +1,17 @@
 Ext.define('vts.view.coba.Toolbar', {
-	extend		: 'Ext.toolbar.Toolbar',
-	xtype       : 'xtoolbar',
-	requires    : ['Ext.form.field.ComboBox','Ext.form.ComboBox'],
-	items: [
+    extend      : 'Ext.toolbar.Toolbar',
+    xtype       : 'xtoolbar',
+    requires    : ['Ext.form.field.ComboBox','Ext.form.ComboBox'],
+    items: [
         'Selected Ship :',
         {
             extend : 'Ext.form.ComboBox',
-            xtype: 'combobox',
-		    displayField: 'name',
-            store   : 'ShipStore',
+            displayField: 'name',
+            xtype: 'combo',
             queryMode: 'local',
+            store   : 'ShipStore',
             tpl: Ext.create('Ext.XTemplate',
-                '<tpl for="." style="background-color:white;">',
+                '<tpl for="." style="">',
                     '<div class="x-boundlist-item">{id} - {name}</div>',
                 '</tpl>'
             ),
@@ -26,7 +26,7 @@ Ext.define('vts.view.coba.Toolbar', {
         {
             xtype: 'datefield',
         },
-        '<h2>Current Time</h2>',
+        '<h2 style="color:blue;">(Current View -> - Date: )</h2>',
         // begin using the right-justified button container
         // '->', // same as { xtype: 'tbfill' }
         // {

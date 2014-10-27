@@ -46,6 +46,9 @@ Ext.define('vts.view.detail.Detail', {
 		},{
 			text	: "Minute",  
 			dataIndex: 'minute'
+		},{
+			text	: "Origin",  
+			dataIndex: 'origin'
 		}
 		],	// One header just for show. There's no data,
 			flex: 1                                       // Use 1/3 of Container's height (hint to Box layout)

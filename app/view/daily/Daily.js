@@ -1,17 +1,16 @@
 Ext.define('vts.view.daily.Daily', {
     extend      : 'Ext.panel.Panel',
-    requires : ['Ext.grid.Panel','Ext.layout.Layout'],
     xtype       : 'xdaily',
     width: 1366,
     region : 'center',
     layout: {
         type: 'hbox',
+        pack: 'start',
         align: 'stretch',
     },
     items: [
-    {               // Results grid specified as a config object with an xtype of 'grid'
-        xtype   : 'panel',
-        align : 'left',
+    {
+        align   : 'left',
         title   : 'Daily Summary',
         flex : 1,
         split   : true,
@@ -22,21 +21,20 @@ Ext.define('vts.view.daily.Daily', {
             xtype: 'splitter'   // A splitter between the two child items
         }, {                    // Details Panel specified as a config object (no xtype defaults to 'panel').
             title: 'Akumulasi Data Flow Meter',
-            align : 'right',
             layout : 'hbox',
             xtype: 'grid',
+            store   : 'WsData',
                 columns: [
                         {
                             text : "Date",
-                            align : 'center',
+                            align : 'center'
                         },{
                             text    : "Hour",
                             align : 'center',
-                            width : 60,
                         },{
                             text    : "Engine#1",
                             align : 'center',
-                            width : 599,
+                            width : 'auto',
                                 items : [{
                                     xtype : 'gridcolumn',
                                     text : "Engine#1 (avg)",
@@ -65,10 +63,11 @@ Ext.define('vts.view.daily.Daily', {
                         },{
                             text    : "Engine#2", 
                             align : 'center',
-                            width : 599,
+                            width : 'auto',
                                 items : [{
                                     xtype : 'gridcolumn',
                                     text : "Engine#2 (avg)",
+                                    dataIndex : 'id_data'
                                     
                                 },{
                                     xtype : 'gridcolumn',
@@ -94,4 +93,4 @@ Ext.define('vts.view.daily.Daily', {
                         }], // An array of form fields
             flex: 2             // Use 2/3 of Container's height (hint to Box layout)
     }]
-})
+});

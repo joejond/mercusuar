@@ -1,9 +1,4 @@
-<?php 
-$id = $_GET['success'];
-if ($id=="") {
-    header("location:ci/");
-}else{
-?>
+
 <!DOCTYPE HTML>
 <html>
 <head>

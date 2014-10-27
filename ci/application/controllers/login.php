@@ -10,7 +10,7 @@ class Login extends CI_Controller{
 	public function index()
 	{
 		if ($this->session->userdata('username')!="") {
-			header("location:http://localhost/mercusuar?success=1");
+			
 		}else{
 			$this->load->view('login_page');
 		}

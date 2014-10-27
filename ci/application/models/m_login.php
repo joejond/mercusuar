@@ -17,11 +17,11 @@ class M_Login extends CI_Model{
 								'username' => $rowUser->username,
 								);
 				$this->session->set_userdata($session);
-				$dataLogin[]= array('username' => $rowUser->username,'password'=> $rowUser->password);
-				$jsonResult = array(
-						'success' => true,
-						'dataLogin' => $dataLogin
-					);
+				// $dataLogin[]= array('username' => $rowUser->username,'password'=> $rowUser->password);
+				// $jsonResult = array(
+				// 		'success' => true,
+				// 		'dataLogin' => $dataLogin
+				// 	);
 			// echo json_encode($jsonResult);
 			header("location:http://localhost/mercusuar?success=1");
 

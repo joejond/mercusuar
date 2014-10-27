@@ -7,20 +7,22 @@ Ext.define('vts.model.Kapal', {
 		'Ext.data.proxy.Ajax'
     ],
     
-    fields: ['id', 'name','status']
+    fields: [{name : 'id', type : 'int'},
+             {name : 'nama' ,type : 'string' },
+             {name : 'active', type : 'bool'}
+            ],
 
+             
     proxy: {
 		type: 'ajax',
 		api: {
-			read: 'ci/index.php/rh/rCause'
+			read: 'ci/index.php/peta/Vessel/rShip'
         },
         reader: {
             type: 'json',
-            root: 'cause',
+            root: 'ship',
             messageProperty: 'message'
         }
     }
 });
 
-    
-});

@@ -1,6 +1,6 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php
 
-class Ship extends CI_Controller {
+class Vessel extends CI_Controller {
 	function __construct() {
         parent::__construct();
         $this->load->model('ship');
@@ -9,17 +9,17 @@ class Ship extends CI_Controller {
 		try {
 		
 			$query = $this->ship->get_ship();
-			// foreach ($query as $row)
-			// {
-			//    $ship[] = array(
-			// 		'id'	=>$row->id_ship,
-			// 		'nama'	=>$row->name,
-			// 		'active'=>'false');
-			// }
+			foreach ($query as $row)
+			{
+			   $ship[] = array(
+					'id'	=>$row->id_ship,
+					'nama'	=>$row->name,
+					'active'=>true);
+			}
 			
 			$jsonResult = array(
 						'success' => true,
-						'ship' => $query
+						'ship' => $ship
 					);
 			
 			

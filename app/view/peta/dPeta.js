@@ -5,11 +5,9 @@ Ext.define('vts.view.peta.dPeta', {
 	extend		: 'Ext.form.Panel',
 	xtype		: 'd_peta',
 	requires	: [
-		// 'Ext.form.field.Checkbox',
 		'Ext.form.field.Date',
-		// 'Ext.grid.Panel',
 		'Ext.layout.container.Form',
-		'vts.view.peta.ListShip',
+		'vts.view.peta.ListShip'
 		
 		//'vts.store.dPeta'
 	],

@@ -65,7 +65,6 @@ Ext.define('vts.view.daily.Daily', {
                         },{
                             text    : "Engine#2", 
                             align : 'center',
-                            width : 599,
                                 items : [{
                                     xtype : 'gridcolumn',
                                     text : "Engine#2 (avg)",

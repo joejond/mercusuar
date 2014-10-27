@@ -1,7 +1,6 @@
 Ext.define('vts.view.daily.Daily', {
 	extend		: 'Ext.panel.Panel',
 	xtype       : 'xdaily',
-	width: 1366,
 	region : 'center',
 	layout: {
         type: 'hbox',

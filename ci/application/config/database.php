@@ -48,10 +48,10 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = '127.0.0.1';
+$db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'monita';
 $db['default']['password'] = 'monita2011';
-$db['default']['database'] = 'ws';
+$db['default']['database'] = 'vts';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

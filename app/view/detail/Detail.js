@@ -3,54 +3,95 @@ Ext.define('vts.view.detail.Detail', {
 	xtype       : 'xdetail',
     layout: {
         type: 'hbox',
-        pack: 'start',
         align: 'stretch'
     },
     items: [{               // Results grid specified as a config object with an xtype of 'grid'
-		xtype	: 'grid',
+		xtype	: 'gridpanel',
 		title   : 'Data List',
-		store	: 'WsData',
-		columns: [{
-			text	: "Id Data", 
-			//hidden	: true,
-			width	: 100, 
-			dataIndex: 'id_data',
-			// xtype	: 'checkcolumn'
-		},{
-			text	: "Id Titik Ukur", 
-			//hidden	: true,
-			width	: 80, 
-			dataIndex: 'id_titik_ukur',
-		},{
-			text	: "Value", 
-			width	: 150, 
-			dataIndex: 'value'
-		},{
-			text	: "Id Trip",  
-			dataIndex: 'id_trip'
-		},{
-			text	: "Data Time",  
-			dataIndex: 'data_time'
-		},{
-			text	: "Year",  
-			dataIndex: 'year'
-		},{
-			text	: "Month",  
-			dataIndex: 'month'
-		},{
-			text	: "Day",  
-			dataIndex: 'day'
-		},{
-			text	: "Hour",  
-			dataIndex: 'hour'
-		},{
-			text	: "Minute",  
-			dataIndex: 'minute'
-		},{
-			text	: "Origin",  
-			dataIndex: 'origin'
-		}
-		],	// One header just for show. There's no data,
+		// store	: 'WsData',
+		columns: [
+                        {
+                            text : "Time",
+                        },{
+                            text    : 'Data Satelit',
+                            align   : 'center',
+                            width   : 'auto',
+                                items : [{
+                                    xtype : 'gridcolumn',
+                                    text : 'Latitude',
+                                    dataIndex : '',
+                                },{
+                                    xtype : 'gridcolumn',
+                                    text : "longitude",
+                                    dataIndex : '',
+                                },{
+                                    xtype : 'gridcolumn',
+                                    text : "speed",
+                                    dataIndex : '',
+                                },{
+                                    xtype : 'gridcolumn',
+                                    text : "heading",
+                                    dataIndex : '',
+                                }]
+                        },{
+                        	text	: 'Data Engine#1',
+                        	align   : 'center',
+                            width   : 'auto',
+                            	items : [{
+                            		 xtype : 'gridcolumn',
+                                    text : 'rpm#1',
+                                    dataIndex : '',
+                                },{
+                                    xtype : 'gridcolumn',
+                                    text : "prop#1",
+                                    dataIndex : '',
+                                },{
+                                    xtype : 'gridcolumn',
+                                    text : "flowmeter#1",
+                                    dataIndex : '',
+                                },{
+                                    xtype : 'gridcolumn',
+                                    text : "overflow#1",
+                                    dataIndex : '',
+                            	},{
+                                    xtype : 'gridcolumn',
+                                    text : "temp#1",
+                                    dataIndex : '',
+                            	},{
+                                    xtype : 'gridcolumn',
+                                    text : "press#1",
+                                    dataIndex : '',
+                            	}]
+                            	},{
+                        	text	: 'Data Engine#2',
+                        	align   : 'center',
+                            width   : 'auto',
+                            	items : [{
+                            		 xtype : 'gridcolumn',
+                                    text : 'rpm#2',
+                                    dataIndex : '',
+                                },{
+                                    xtype : 'gridcolumn',
+                                    text : "prop#2",
+                                    dataIndex : '',
+                                },{
+                                    xtype : 'gridcolumn',
+                                    text : "flowmeter#2",
+                                    dataIndex : '',
+                                },{
+                                    xtype : 'gridcolumn',
+                                    text : "overflow#2",
+                                    dataIndex : '',
+                            	},{
+                                    xtype : 'gridcolumn',
+                                    text : "temp#2",
+                                    dataIndex : '',
+                            	},{
+                                    xtype : 'gridcolumn',
+                                    text : "press#2",
+                                    dataIndex : '',
+                            	}]
+                        }],	// One header just for show. There's no data,
 			flex: 1                                       // Use 1/3 of Container's height (hint to Box layout)
 		}, {
 			xtype: 'splitter'   // A splitter between the two child items
@@ -58,6 +99,7 @@ Ext.define('vts.view.detail.Detail', {
 			title: 'Ship Data View',
 			bodyPadding: 5,
 			items: [{
+				fieldLabel: 'Kapal'
 			}], // An array of form fields
 			flex: 2             // Use 2/3 of Container's height (hint to Box layout)
 	}]

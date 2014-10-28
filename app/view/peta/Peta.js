@@ -4,7 +4,7 @@
 Ext.define('vts.view.peta.Peta', {
 	extend		: 'Ext.tab.Panel',
 	xtype		: 'xpeta',
-	requires	: ['vts.view.detail.Detail','vts.view.daily.Daily','vts.view.daily.Daily2','vts.view.coba.Toolbar'],	
+	requires	: [				],	
 	
     tabPosition	: 'left',
 	items: [{
@@ -28,45 +28,16 @@ Ext.define('vts.view.peta.Peta', {
 		
 	}, {
 		title	: 'SHIP - DETAIL DATA', 
-		layout: 'border', 
+		layout: 'fit', 
 		id: 'detail_tab',
-		iconCls: 'ship_detail',
-
-		items		: [{
-			region	: 'center',
-			xtype   : 'panel'
-					    
-		},{
-			region	: 'north',
-			xtype	: 'xtoolbar',
-		},{
-			region	: 'west',
-			xtype	: 'xdetail',
-			width	: 1366,
-			split	: true
-		}]
+		iconCls: 'ship_detail'
+		
     },{
 		title: 'DAILY REPORT', 
-		layout: 'border',  
+		layout: 'fit',  
 		id: 'analisis_tab',
 		iconCls: 'report',
-		items		: [
-		{
-			region	: 'center',
-			xtype   : 'panel',
-					    
-		},{
-			region	: 'north',
-			xtype	: 'xtoolbar',
-		},{
-			region	: 'north',
-			xtype	: 'xdaily2',
-		},{
-			region	: 'west',
-			xtype	: 'xdaily',
-		}]
 		//xtype : 'xtgl'
 		//items: [ panel_hitung ],
 	}]
-
 });

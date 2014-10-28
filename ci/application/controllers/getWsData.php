@@ -1,7 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 /**
-* @author : 
 */
 class getWsData extends CI_Controller
 {
@@ -15,7 +14,10 @@ class getWsData extends CI_Controller
 	{
 		try {
 			$q = $this->ws_data_model->getData();
+
 			/*foreach ($q->result() as $row) {
+			foreach ($q->result() as $row) {
+			foreach ($q->result() as $row) {
 				$data[] = array(
 						"id_data" => $row->id_data,
 						"id_tu" => $row->id_titik_ukur,
@@ -33,5 +35,15 @@ class getWsData extends CI_Controller
 		}
 		//$this->load->view('transpose');
 		echo json_encode($hasilJson);
+			}
+			$hasilJson = array(
+					"success " => true,
+					"data" => $data
+				);
+
+			echo json_encode($hasilJson);
+		} catch (Exception $e) {
+			echo 'Caught exception: ',  $e->getMessage();
+		}
 	}
 }

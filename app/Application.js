@@ -4,14 +4,13 @@ Ext.define('vts.Application', {
     extend: 'Ext.app.Application',
 
     views: [
-        'peta.Peta',
-        'peta.dPeta'
+        // 'peta.Peta',
+        // 'peta.dPeta'
     ],
 
     controllers: [
         // TODO: add controllers here
-		'Peta',
-        'Detail'
+        'Peta'
     ],
 
     stores: [

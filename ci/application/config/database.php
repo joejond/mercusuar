@@ -51,6 +51,7 @@ $active_record = TRUE;
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'monita';
 $db['default']['password'] = 'monita2011';
+// $db['default']['database'] = 'chevron';$db['default']['dbdriver'] = 'mysql';
 $db['default']['database'] = 'vts';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';

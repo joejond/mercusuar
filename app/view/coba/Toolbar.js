@@ -1,15 +1,15 @@
 Ext.define('vts.view.coba.Toolbar', {
-	extend		: 'Ext.toolbar.Toolbar',
-	xtype       : 'xtoolbar',
-	requires    : ['Ext.form.field.ComboBox','Ext.form.ComboBox'],
-	items: [
+    extend      : 'Ext.toolbar.Toolbar',
+    xtype       : 'xtoolbar',
+    requires    : ['Ext.form.field.ComboBox','Ext.form.ComboBox'],
+    items: [
         'Selected Ship :',
         {
             extend : 'Ext.form.ComboBox',
             displayField: 'name',
             xtype: 'combo',
             queryMode: 'local',
-            store   : 'ShipStore',
+            // store   : 'ShipStore',
             tpl: Ext.create('Ext.XTemplate',
                 '<tpl for="." style="">',
                     '<div class="x-boundlist-item">{id} - {name}</div>',

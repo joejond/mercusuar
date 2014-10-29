@@ -2,9 +2,7 @@ Ext.define('vts.view.daily.dailySummary', {
     extend      : 'Ext.panel.Panel',
     xtype       : 'xdaily',
 
-    title: 'Daily Summary',
-    width: '35%',
-    height: '50%',
+    title   : 'Daily Summary',
     split : true,
 
         layout: {

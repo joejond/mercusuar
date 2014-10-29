@@ -3,8 +3,6 @@ Ext.define('vts.view.daily.Akumulasi', {
     xtype       : 'xdaily2',
 
     title	: 'Akumulasi Data Flowmeter',
-    width	: '100%',
-    height	: '50%',
 	
     	items : [{
     		xtype	: 'gridpanel',

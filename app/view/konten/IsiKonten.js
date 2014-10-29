@@ -6,7 +6,8 @@ Ext.define('vts.view.konten.IsiKonten', {
 	xtype		: 'isikonten',
 	requires	: [
 		'vts.view.peta.dPeta',
-		'vts.view.detail.Detail',
+		'vts.view.detail.dataList',
+		// 'vts.view.detail.visualData',
 		'vts.view.daily.dailySummary',
 		'vts.view.daily.Akumulasi',
 		'vts.view.daily.Chart',
@@ -53,10 +54,8 @@ Ext.define('vts.view.konten.IsiKonten', {
 			xtype	: 'xtoolbar',
 		},{
 			region	: 'west',
-			// xtype	: 'panel',
 			xtype	: 'xdetail',
-			width	: '100%',
-			split	: true
+			width	: '100%'
 		}]
     },{
 		title: 'DAILY REPORT', 
@@ -73,12 +72,15 @@ Ext.define('vts.view.konten.IsiKonten', {
 		},{
 			region	: 'north',
 			xtype	: 'xchart',
+			height	: '50%'
 		},{
 			region	: 'west',
 			xtype	: 'xdaily',
+			width	: '30%',
 		},{
 			region	: 'west',
 			xtype	: 'xdaily2',
+			width	: '100%'
 		}]
 		//xtype : 'xtgl'
 		//items: [ panel_hitung ],

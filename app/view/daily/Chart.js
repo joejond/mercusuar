@@ -9,5 +9,4 @@ Ext.define('vts.view.daily.Chart', {
 	items	: [{
 		// xtype : 'chart'
 	}]
-
 })

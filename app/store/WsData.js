@@ -14,7 +14,7 @@ Ext.define('vts.store.WsData', {
         },
 		reader: {
             type: 'json',
-            root: 'data',
+            root: 'ship',
             messageProperty: 'message'
         }
     }

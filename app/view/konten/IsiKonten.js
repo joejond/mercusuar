@@ -72,11 +72,12 @@ Ext.define('vts.view.konten.IsiKonten', {
 		},{
 			region	: 'north',
 			xtype	: 'xchart',
+			split	: 'true',
 			height	: '50%'
 		},{
 			region	: 'west',
 			xtype	: 'xdaily',
-			width	: '30%',
+			width	: '30%'
 		},{
 			region	: 'west',
 			xtype	: 'xdaily2',

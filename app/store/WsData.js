@@ -1,12 +1,10 @@
-/**
-* Jono Juli 2014
-*/
 Ext.define('vts.store.WsData', {
     extend: 'Ext.data.Store',
     requires: 'vts.model.WsData',
 	model: 'vts.model.WsData',
+	 // storeId: 'WsData',
 	autoLoad: true,
-	
+
 	proxy: {
 		type: 'ajax',
 		api: {
@@ -14,9 +12,10 @@ Ext.define('vts.store.WsData', {
         },
 		reader: {
             type: 'json',
-            root: 'ship',
+            root: 'data',
             messageProperty: 'message'
         }
     }
+    
 	
 });

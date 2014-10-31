@@ -46,12 +46,8 @@ Ext.define('vts.view.konten.IsiKonten', {
 		iconCls: 'ship_detail',
 
 		items		: [{
-			region	: 'center',
-			xtype   : 'panel',
-					    
-		},{
 			region	: 'north',
-			xtype	: 'xtoolbar',
+			xtype	: 'xtoolbar'
 		},{
 			region	: 'west',
 			xtype	: 'xdetail',
@@ -62,11 +58,7 @@ Ext.define('vts.view.konten.IsiKonten', {
 		layout: 'border',  
 		id: 'analisis_tab',
 		iconCls: 'report',
-		items		: [
-		{
-			region	: 'center',
-			xtype   : 'panel',	    
-		},{
+		items		: [{
 			region	: 'north',
 			xtype	: 'xtoolbar',
 		},{

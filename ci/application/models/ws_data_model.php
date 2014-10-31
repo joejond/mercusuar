@@ -10,7 +10,8 @@ class Ws_data_model extends CI_Model {
     function getData()
     {
         //$this->db->select('id_ship, modem_id');
-        $query = $this->db->get('data_olah');
+        // $this->db->limit(data,30);
+        $query = $this->db->get('data_olah',30,30);
         return $query;
     }
     

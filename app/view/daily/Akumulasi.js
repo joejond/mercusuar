@@ -1,67 +1,67 @@
 Ext.define('vts.view.daily.Akumulasi', {
     extend      : 'Ext.grid.Panel',
     xtype       : 'xdaily2',
-    requires    : [],
+    requires    : ['vts.store.AkuData'],
 
     title :'Akumulasi Data Flowmeter',
-	// store : '',
+	store : 'AkuData',
     columnLines : true,
     columns : [{
             text : 'Date',
-            dataIndex : ''
+            dataIndex : 'tanggal'
         },{
             text : 'Hour',
-            dataIndex : ''
+            dataIndex : 'jam'
         },{
             text : 'Engine#1',
             columns : [{
                 text : 'Engine#1 (avg)',
-                dataIndex : ''
+                dataIndex : 'rpm1_avg'
             },{
                 text : 'Propeler#1 (avg)',
-                dataIndex : ''
+                dataIndex : 'prop1_avg'
             },{
-                text : 'Flowmeter (avg)',
-                dataIndex : ''
+                text : 'Flowmeter#1 (avg)',
+                dataIndex : 'flow1_tot'
             },{
                 text : 'Overflow#1 (avg)',
-                dataIndex : ''
+                dataIndex : 'overflow1_tot'
             },{
                 text : 'Temperature#1 (avg)',
-                dataIndex : ''
+                dataIndex : 'temp1_avg'
             },{
                 text : 'Pressure#1 (avg)',
-                dataIndex : ''
+                dataIndex : 'press1_avg'
             }],
         },{
             text : 'Engine#2',
             columns : [{
                 text : 'Engine#2 (avg)',
-                dataIndex : ''
+                dataIndex : 'rpm2_avg'
             },{
                 text : 'Propeler#2 (avg)',
-                dataIndex : ''
+                dataIndex : 'prop2_avg'
             },{
-                text : 'Flowmeter (avg)',
-                dataIndex : ''
+                text : 'Flowmeter#2 (avg)',
+                dataIndex : 'flow2_tot'
             },{
                 text : 'Overflow#2 (avg)',
-                dataIndex : ''
+                dataIndex : 'overflow2_tot'
             },{
                 text : 'Temperature#2 (avg)',
-                dataIndex : ''
+                dataIndex : 'temp2_avg'
             },{
                 text : 'Pressure#2 (avg)',
-                dataIndex : ''
+                dataIndex : 'press2_avg'
             }],
         },{
             text : 'Genset Run-Hour',
             columns : [{
                 text : 'Genset#1',
-                dataIndex : ''
+                dataIndex : 'runhour1'
             },{
                 text : 'Genset#2',
-                dataIndex : ''
+                dataIndex : 'runhour2'
             }]
         }]
 })

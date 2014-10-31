@@ -12,12 +12,14 @@ Ext.define('vts.controller.Peta', {
 
     stores: [
 		'Kapals',
-		'WsData'
+		'WsData',
+		'AkuData'
     ],
     
     models: [
 		'Kapal',
-		'WsData'
+		'WsData',
+		'AkuData'
     ],
 	
 	refs : [

@@ -3,7 +3,7 @@ Ext.define('vts.view.daily.dailySummary', {
     xtype       : 'xdaily',
 
     title   : 'Daily Summary',
-    split : true,
+    // split : true,
 
         layout: {
             type: 'table',

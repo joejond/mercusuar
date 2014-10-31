@@ -7,7 +7,7 @@ Ext.define('vts.view.konten.IsiKonten', {
 	requires	: [
 		'vts.view.peta.dPeta',
 		'vts.view.detail.dataList',
-		// 'vts.view.detail.visualData',
+		'vts.view.detail.visualData',
 		'vts.view.daily.dailySummary',
 		'vts.view.daily.Akumulasi',
 		'vts.view.daily.Chart',
@@ -40,7 +40,7 @@ Ext.define('vts.view.konten.IsiKonten', {
 		}]
 		
 	}, {
-		title	: 'SHIP - DETAIL DATA', 
+		title	: 'SHIP - DETAIL DATA',
 		layout: 'border', 
 		id: 'detail_tab',
 		iconCls: 'ship_detail',
@@ -49,11 +49,16 @@ Ext.define('vts.view.konten.IsiKonten', {
 			region	: 'north',
 			xtype	: 'xtoolbar'
 		},{
-			region	: 'west',
+			region	: 'west',	
 			xtype	: 'xdetail',
-			width	: '100%'
+			flex	: 1,
+			split	: true,
+		},{
+			region	: 'center',
+			xtype	: 'xdetail2',
+			flex	: 2
 		}]
-    },{
+    },{	
 		title: 'DAILY REPORT', 
 		layout: 'border',  
 		id: 'analisis_tab',
@@ -64,16 +69,16 @@ Ext.define('vts.view.konten.IsiKonten', {
 		},{
 			region	: 'north',
 			xtype	: 'xchart',
-			split	: 'true',
-			height	: '50%'
+			split	: true
+		},{
+			region	: 'center',
+			xtype	: 'xdaily2',
+			flex	: 2
 		},{
 			region	: 'west',
 			xtype	: 'xdaily',
-			width	: '30%'
-		},{
-			region	: 'west',
-			xtype	: 'xdaily2',
-			width	: '100%'
+			split	: true,
+			flex	: 1
 		}]
 		//xtype : 'xtgl'
 		//items: [ panel_hitung ],

@@ -15,6 +15,7 @@
 |
 */
 $config['base_url']	= 'http://localhost/mercusuar/';
+
 /*
 |--------------------------------------------------------------------------
 | Index File
@@ -223,7 +224,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = 'belajar ext js';
+$config['encryption_key'] = 'atsuko aditia';
 
 /*
 |--------------------------------------------------------------------------

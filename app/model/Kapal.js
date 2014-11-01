@@ -4,7 +4,7 @@
 Ext.define('vts.model.Kapal', {
     extend: 'Ext.data.Model',
     requires:[
-        'Ext.data.proxy.Ajax'
+		'Ext.data.proxy.Ajax'
     ],
     
     fields: [{name : 'id', type : 'int'},
@@ -14,9 +14,9 @@ Ext.define('vts.model.Kapal', {
 
              
     proxy: {
-        type: 'ajax',
-        api: {
-            read: 'ci/index.php/peta/Vessel/rShip'
+		type: 'ajax',
+		api: {
+			read: 'ci/index.php/peta/Vessel/rShip'
         },
         reader: {
             type: 'json',

@@ -7,6 +7,6 @@ Ext.define('vts.view.daily.Chart', {
 	height	: '50%',
 
 	items	: [{
-		// xtype : 'chart'
+		
 	}]
 })

@@ -10,7 +10,7 @@ Ext.define('vts.Application', {
 
     controllers: [
         // TODO: add controllers here
-        'Peta'
+		'Peta'
     ],
 
     stores: [

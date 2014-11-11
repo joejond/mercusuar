@@ -7,7 +7,7 @@ Ext.define('vts.store.AkuData', {
 	proxy: {
 		type: 'ajax',
 		api: {
-			read: 'ci/index.php/getAkuData'
+			read: 'ci/index.php/getWsData/index2'
         },
 		reader: {
             type: 'json',

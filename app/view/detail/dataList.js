@@ -5,11 +5,13 @@ Ext.define('vts.view.detail.dataList', {
    
   title: 'Data List',
   store: 'WsData',
-  columnLines: true,
+  // columnLines: true,
    columns: [
           {
+            width : 120,
+            locked : true,
             text : 'Time',
-            dataIndex: 'data_time'
+            dataIndex: 'data_time',
         },{
             text : 'Data Satelit',
             columns: [{

@@ -14,10 +14,9 @@ Ext.define('vts.view.peta.ListShip', {
 	columns: [{
 			// text	: "Id", 
 			//hidden	: true,
+			xtype : 'checkcolumn',
 			width	: 30, 
-			dataIndex: 'active',
-			
-			xtype : 'checkcolumn'
+			dataIndex: 'active'
 		},{
 			text	: "Ship Name", 
 			flex 	: 1, 

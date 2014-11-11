@@ -5,11 +5,13 @@ Ext.define('vts.view.daily.Akumulasi', {
 
     title :'Akumulasi Data Flowmeter',
 	store : 'AkuData',
-    columnLines : true,
+    // columnLines : true,
     columns : [{
+            locked : true,
             text : 'Date',
             dataIndex : 'tanggal'
         },{
+            locked : true,
             text : 'Hour',
             dataIndex : 'jam'
         },{

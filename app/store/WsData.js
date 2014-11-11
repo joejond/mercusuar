@@ -10,7 +10,7 @@ Ext.define('vts.store.WsData', {
 	proxy: {
 		type: 'ajax',
 		api: {
-			read: 'ci/index.php/getWsData'
+			read: 'ci/index.php/getWsData/index'
         },
 		reader: {
             type: 'json',

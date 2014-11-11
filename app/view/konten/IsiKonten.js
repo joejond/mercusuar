@@ -51,8 +51,9 @@ Ext.define('vts.view.konten.IsiKonten', {
 		},{
 			region	: 'west',	
 			xtype	: 'xdetail',
-			flex	: 1,
+			collapsible	: true,
 			split	: true,
+			flex	: 2
 		},{
 			region	: 'center',
 			xtype	: 'xdetail2',
@@ -69,7 +70,8 @@ Ext.define('vts.view.konten.IsiKonten', {
 		},{
 			region	: 'north',
 			xtype	: 'xchart',
-			split	: true
+			collapsible	: true,
+			height	: '50%'
 		},{
 			region	: 'center',
 			xtype	: 'xdaily2',
@@ -78,6 +80,7 @@ Ext.define('vts.view.konten.IsiKonten', {
 			region	: 'west',
 			xtype	: 'xdaily',
 			split	: true,
+			collapsible	: true,
 			flex	: 1
 		}]
 		//xtype : 'xtgl'

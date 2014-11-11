@@ -24,4 +24,5 @@ Ext.define('vts.controller.Detail', {
 			//Event handlers
 		});
 	}
+	
 });

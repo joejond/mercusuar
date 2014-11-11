@@ -13,13 +13,15 @@ Ext.define('vts.controller.Peta', {
     stores: [
 		'Kapals',
 		'WsData',
-		'AkuData'
+		'AkuData',
+		'ShipStore'
     ],
     
     models: [
 		'Kapal',
 		'WsData',
-		'AkuData'
+		'AkuData',
+		'ShipStore'
     ],
 	
 	refs : [

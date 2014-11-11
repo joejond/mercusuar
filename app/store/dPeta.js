@@ -10,7 +10,7 @@ Ext.define('vts.store.dPeta', {
 	proxy: {
 		type: 'ajax',
 		api: {
-			read: 'ci/index.php/getShip'
+			read: 'ci/index.php/getWsData/index3'
         },
 		reader: {
             type: 'json',

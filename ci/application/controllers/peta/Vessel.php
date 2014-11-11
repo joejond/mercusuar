@@ -3,12 +3,12 @@
 class Vessel extends CI_Controller {
 	function __construct() {
         parent::__construct();
-        $this->load->model('ship');
+        $this->load->model('ws_data_model');
     }
 	public function rShip()	{		
 		try {
 		
-			$query = $this->ship->get_ship();
+			$query = $this->ws_data_model->getShip();
 			foreach ($query as $row)
 			{
 			   $ship[] = array(

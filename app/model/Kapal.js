@@ -24,5 +24,5 @@ Ext.define('vts.model.Kapal', {
             messageProperty: 'message'
         }
     }
-});
+})
 
